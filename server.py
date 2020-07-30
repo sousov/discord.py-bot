@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 from discord.utils import get
+import os
 
 import asyncio
 import json
@@ -53,4 +54,5 @@ async def on_member_join(member):
     await member.send(f"**Хей {member.mention}, Мы рады тебя видеть!**")
     await member.send("Чтобы начать общение, необходимо, чтобы ты подтвердил свой вход на канале: **#вход**")
 
-client.run(servertoken)
+token = os.environ.get('BOT_TOKEN')
+client.run(token)
