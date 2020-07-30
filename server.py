@@ -24,7 +24,7 @@ print('Connecting to server...')
 @client.event
 async def on_ready():
     change_status.start()
-    channel = bot.get_channel(КАНАЛ КУДА ОТПРАВИТЬ ИНФУ)
+    channel = bot.get_channel(735850114471428097)
     print('Главная часть бота Загружена!')
     embed = discord.Embed(colour=discord.Colour.red())
     embed.set_author(name='Информация')
